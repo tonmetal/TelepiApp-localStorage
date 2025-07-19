@@ -1,0 +1,130 @@
+body{
+    color: #f5f3f4;
+    text-align: center;
+    background-color:  #7a0903;
+    font-family: "Roboto", sans-serif;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    margin: 30px auto;
+    border-radius: 8px;
+    background-color: #bf0603;
+    padding: 25px 10px;
+    box-shadow: 0 0px 10px rgb(63, 1, 1);
+}
+
+.nav{
+    width: 270px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #f5f3f4 solid  1px;
+}
+
+.nav img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+h1{
+    font-size: 25px;
+}
+
+h2{
+    font-size: large;
+    text-align: end;
+    margin: auto;
+    margin-top: 25px;
+    padding-bottom: ;
+    width: 250px;
+    border-bottom: solid white 1px;
+}
+
+.border{
+    margin: 10px auto;
+    width: 320px;
+    border-bottom: dotted white 2px;
+}
+
+.formulario{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 265px;
+    font-weight: 600;
+}
+
+input{
+    border: none;
+    background-color: #f5483b;
+    color: #f5f3f4;
+    padding: 10px 10px;
+    border-radius: 4px;
+    margin: 10px 0 ;
+    text-align: end;
+    font-weight: bold;
+}
+
+.formulario label{
+    margin-bottom: -10px;
+    margin-top: 5px;
+}
+
+
+button{
+    margin: 10px;
+    width: 117px;
+    height: 25px;
+    background-color: #8d0801;
+    color: #f5f3f4;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    
+}
+
+.botones-nom{
+    margin-top: -15px;
+}
+
+.resultado{
+    width: 245px;
+    display: block;
+    margin:  12px auto 36px;
+    background-color: #f5483b;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+input:invalid {
+    color: #8d0801;
+}
+
+
+li{
+    margin-left:  10px;
+    margin-bottom: 8px;
+    list-style: none;
+    color: #f5f3f4;
+    font-weight: bold;
+    background-color: #d33024;
+    border-radius: 3px;
+    border-bottom: dotted white 1px;
+    padding: 8px ;
+    height: 20px;
+    width: 220px;
+    text-align: end;
+}
+
