@@ -68,11 +68,12 @@ input{
     border: none;
     background-color: #f5483b;
     color: #f5f3f4;
-    padding: 10px 10px;
+    padding: 7px 10px;
     border-radius: 4px;
     margin: 10px 0 ;
     text-align: end;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .formulario label{
@@ -84,12 +85,13 @@ input{
 button{
     margin: 10px;
     width: 117px;
-    height: 25px;
+    height: 27px;
     background-color: #8d0801;
     color: #f5f3f4;
     border: none;
     border-radius: 4px;
     font-weight: bold;
+    font-size: 15px;
     
 }
 
