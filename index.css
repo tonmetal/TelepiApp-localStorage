@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     max-width: 330px;
-    margin: 30px auto;
+    margin: 40px auto;
     border-radius: 8px;
     background-color: #bf0603;
     padding: 25px 10px;
@@ -42,15 +42,16 @@ h2{
     text-align: end;
     margin: auto;
     margin-top: 25px;
-    padding-bottom: ;
     width: 250px;
     border-bottom: solid white 1px;
 }
 
 .border{
-    margin: 10px auto;
-    width: 320px;
+    width: 330px;
+    height: 20px;
     border-bottom: dotted white 2px;
+    border-radius: 8px;
+    margin-bottom: 12px;
 }
 
 .formulario{
@@ -102,7 +103,7 @@ button{
 .resultado{
     width: 245px;
     display: block;
-    margin:  12px auto 36px;
+    margin:  12px auto 29px;
     background-color: #f5483b;
     text-align: center;
     padding: 8px 10px;
