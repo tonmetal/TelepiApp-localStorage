@@ -3,7 +3,7 @@ body{
     text-align: center;
     background-color:  #7a0903;
     font-family: "Roboto", sans-serif;
-    font-size: large;
+    font-size: x-large;
 }
 
 .app{
@@ -20,8 +20,7 @@ body{
 .nav{
     width: 270px;
     display: flex;
-    margin: auto;
-    margin-bottom: 15px;
+    margin: 15px auto 18px;
     justify-content: center;
     align-items: center;
     border-bottom: #f5f3f4 solid  1px;
@@ -133,14 +132,14 @@ li{
 #btn-nom{
     width: 70%;
     height: 30px;
-    margin: auto;
+    margin: 20px auto 30px;
 }
 #nominas{
     max-width: 330px;
     height: fit-content;
     border-radius: 8px;
     background-color: #bf0603;
-    padding: 15px 10px;
+    padding: 35px 10px;
     box-shadow: 0 0px 10px rgb(63, 1, 1);
     position: absolute;
     top: 0;
@@ -166,12 +165,13 @@ li{
 
 #cierre{
     font-weight: bold;
+    font-size: medium;
     border: solid whitesmoke 1px;
     border-radius: 4px;
     position: absolute;
     top: -10px;
     right: 8px;
-    padding: 1px 7px;
+    padding: 2px 7px;
 }
 
 #cierre:active{
