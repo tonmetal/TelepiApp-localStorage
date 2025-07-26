@@ -15,6 +15,7 @@ body{
     background-color: #bf0603;
     padding: 25px 10px;
     box-shadow: 0 0px 10px rgb(63, 1, 1);
+    font-size: large;
 }
 
 .nav{
@@ -79,13 +80,13 @@ input{
 button{
     margin: 10px;
     width: 117px;
-    height: 27px;
+    height: 29px;
     background-color: #8d0801;
     color: #f5f3f4;
     border: none;
     border-radius: 4px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
     
 }
 
@@ -131,7 +132,7 @@ li{
 
 #btn-nom{
     width: 70%;
-    height: 30px;
+    height: 35px;
     margin: 20px auto 30px;
 }
 #nominas{
