@@ -3,13 +3,14 @@ body{
     text-align: center;
     background-color:  #7a0903;
     font-family: "Roboto", sans-serif;
+    font-size: large;
 }
 
 .app{
     display: flex;
     flex-direction: column;
     max-width: 330px;
-    margin: 25px auto;
+    margin: 45px auto;
     border-radius: 8px;
     background-color: #bf0603;
     padding: 25px 10px;
@@ -46,13 +47,6 @@ h2{
     border-bottom: solid white 1px;
 }
 
-.border{
-    width: 330px;
-    height: 20px;
-    border-bottom: dotted white 2px;
-    border-radius: 8px;
-    margin-bottom: 12px;
-}
 
 .formulario{
     text-align: start;
@@ -96,6 +90,11 @@ button{
     
 }
 
+button:hover{
+    background-color: #f5f3f4;
+    color: #8d0801;
+}
+
 .botones-nom{
     margin-top: -15px;
 }
@@ -103,7 +102,7 @@ button{
 .resultado{
     width: 245px;
     display: block;
-    margin:  12px auto 29px;
+    margin:  18px auto 29px;
     background-color: #f5483b;
     text-align: center;
     padding: 8px 10px;
@@ -131,3 +130,52 @@ li{
     text-align: end;
 }
 
+#btn-nom{
+    width: 70%;
+    height: 30px;
+    margin: auto;
+}
+#nominas{
+    max-width: 330px;
+    height: fit-content;
+    border-radius: 8px;
+    background-color: #bf0603;
+    padding: 15px 10px;
+    box-shadow: 0 0px 10px rgb(63, 1, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    backdrop-filter: blur(8px);   
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.3); 
+    display: none; 
+    z-index: 10; 
+}
+
+#cierre{
+    font-weight: bold;
+    border: solid whitesmoke 1px;
+    border-radius: 4px;
+    position: absolute;
+    top: -10px;
+    right: 8px;
+    padding: 1px 7px;
+}
+
+#cierre:hover{
+    color: #7a0903;
+    background-color: #f5f3f4;
+    cursor: pointer;
+}

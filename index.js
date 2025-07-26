@@ -7,6 +7,10 @@ const guardar = document.getElementById("guardar")
 const reiniciar = document.getElementById("reiniciar")
 const borrar = document.getElementById("borrar")
 const reseteo = document.getElementById("resetear")
+const nomina = document.getElementById("nominas")
+const ver = document.getElementById("btn-nom")
+const cierre = document.getElementById("cierre")
+const overlay = document.getElementById("overlay")
 let historial = document.getElementById("historial")
 
 let total = ""
@@ -131,3 +135,14 @@ reiniciar.addEventListener("click", function () {
 
 // Carga inicial
 cargarNominas()
+
+
+ver.addEventListener("click", function(){
+    nomina.style.display = "block"
+    overlay.style.display = "block"
+})
+
+cierre.addEventListener("click", function(){
+    nomina.style.display = "none"
+    overlay.style.display = "none"
+})
