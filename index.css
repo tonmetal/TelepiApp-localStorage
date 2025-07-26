@@ -90,7 +90,7 @@ button{
     
 }
 
-button:hover{
+button:active{
     background-color: #f5f3f4;
     color: #8d0801;
 }
@@ -174,7 +174,7 @@ li{
     padding: 1px 7px;
 }
 
-#cierre:hover{
+#cierre:active{
     color: #7a0903;
     background-color: #f5f3f4;
     cursor: pointer;
