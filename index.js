@@ -141,6 +141,8 @@ ver.addEventListener("click", function(){
     overlay.style.display = "block"
 })
 
+
+
 overlay.addEventListener("click", function(){
     nomina.style.display = "none"
     overlay.style.display = "none"

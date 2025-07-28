@@ -61,7 +61,7 @@ h2{
 
 input{
     border: none;
-    background-color: #f05933;
+    background-color: #e93b32;
     color: #f5f3f4;
     padding: 7px 10px;
     border-radius: 4px;
@@ -103,7 +103,7 @@ button:active{
     width: 245px;
     display: block;
     margin:  18px auto 29px;
-    background-color: #f05933;
+    background-color: #e93b32;
     text-align: center;
     padding: 8px 10px;
     border-radius: 4px;
@@ -121,13 +121,17 @@ li{
     list-style: none;
     color: #f5f3f4;
     font-weight: bold;
-    background-color: #d65332;
+    background-color: #d12825;
     border-radius: 3px;
     border-bottom: dotted white 1px;
     padding: 8px ;
     height: 20px;
     width: 220px;
     text-align: end;
+}
+
+ul{
+    margin: 30px auto 40px;
 }
 
 #btn-nom{
