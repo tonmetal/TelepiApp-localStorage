@@ -61,7 +61,7 @@ h2{
 
 input{
     border: none;
-    background-color: #f5483b;
+    background-color: #f05933;
     color: #f5f3f4;
     padding: 7px 10px;
     border-radius: 4px;
@@ -103,7 +103,7 @@ button:active{
     width: 245px;
     display: block;
     margin:  18px auto 29px;
-    background-color: #f5483b;
+    background-color: #f05933;
     text-align: center;
     padding: 8px 10px;
     border-radius: 4px;
@@ -121,7 +121,7 @@ li{
     list-style: none;
     color: #f5f3f4;
     font-weight: bold;
-    background-color: #d33024;
+    background-color: #d65332;
     border-radius: 3px;
     border-bottom: dotted white 1px;
     padding: 8px ;
@@ -164,19 +164,3 @@ li{
     z-index: 10; 
 }
 
-#cierre{
-    font-weight: bold;
-    font-size: medium;
-    border: solid whitesmoke 1px;
-    border-radius: 4px;
-    position: absolute;
-    top: -10px;
-    right: 8px;
-    padding: 2px 7px;
-}
-
-#cierre:active{
-    color: #7a0903;
-    background-color: #f5f3f4;
-    cursor: pointer;
-}

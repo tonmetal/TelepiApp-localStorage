@@ -9,7 +9,6 @@ const borrar = document.getElementById("borrar")
 const reseteo = document.getElementById("resetear")
 const nomina = document.getElementById("nominas")
 const ver = document.getElementById("btn-nom")
-const cierre = document.getElementById("cierre")
 const overlay = document.getElementById("overlay")
 let historial = document.getElementById("historial")
 
@@ -142,7 +141,7 @@ ver.addEventListener("click", function(){
     overlay.style.display = "block"
 })
 
-cierre.addEventListener("click", function(){
+overlay.addEventListener("click", function(){
     nomina.style.display = "none"
     overlay.style.display = "none"
 })
