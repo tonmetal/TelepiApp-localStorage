@@ -1,170 +1,236 @@
-body{
-    color: #f5f3f4;
-    text-align: center;
-    background-color:  #7a0903;
-    font-family: "Roboto", sans-serif;
-    font-size: x-large;
-}
 
-.app{
-    display: flex;
-    flex-direction: column;
-    max-width: 330px;
-    margin: 45px auto;
-    border-radius: 8px;
-    background-color: #bf0603;
-    padding: 25px 10px;
-    box-shadow: 0 0px 10px rgb(63, 1, 1);
-    font-size: large;
-}
 
-.nav{
-    width: 270px;
-    display: flex;
-    margin: 15px auto 18px;
-    justify-content: center;
-    align-items: center;
-    border-bottom: #f5f3f4 solid  1px;
-}
 
-.nav img{
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    margin-bottom: 2px;
+/* header, main, form, #nominas{
+  border: dotted 2px yellow;
 }
+  */
 
-h1{
-    font-size: 25px;
+h1, h2{
+  margin: 0;
 }
 
 h2{
-    font-size: large;
-    text-align: end;
-    margin: auto;
-    margin-top: 25px;
-    width: 250px;
-    border-bottom: solid white 1px;
+  font-size: 1rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color:  #7a0903;
+    color: white;
+    font-family: roboto, 'sans-serif';
+    display: flex;
+    justify-content: center;
+
+}
+
+.container{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 2em;
+    padding: 3em 1em;
+    background-color: #bf0603;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 15px rgb(58, 5, 5);
 }
 
 
-.formulario{
-    text-align: start;
+/* HEADER */
+
+header{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    padding-bottom: 1em;
+    border-bottom: 1px solid white;
+}
+
+header img{
+    width: 1.1rem;
+    margin-right: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+/* MAIN */
+
+
+main{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+form{
+   margin-top: 1em ;
+   margin-bottom: 1em;
+}
+
+
+.inputs{
     display: flex;
     flex-direction: column;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 265px;
-    font-weight: 600;
 }
 
 input{
-    border: none;
+    margin-bottom: 1em;
     background-color: #e93b32;
-    color: #f5f3f4;
-    padding: 7px 10px;
-    border-radius: 4px;
-    margin: 10px 0 ;
-    text-align: end;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.formulario label{
-    margin-bottom: -10px;
-    margin-top: 5px;
-}
-
-
-button{
-    margin: 10px;
-    width: 117px;
-    height: 29px;
-    background-color: #8d0801;
-    color: #f5f3f4;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: right;
     border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 17px;
-    
-}
-
-button:active{
-    background-color: #f5f3f4;
-    color: #8d0801;
-}
-
-.botones-nom{
-    margin-top: -15px;
-}
-
-.resultado{
-    width: 245px;
-    display: block;
-    margin:  18px auto 29px;
-    background-color: #e93b32;
-    text-align: center;
-    padding: 8px 10px;
-    border-radius: 4px;
-    font-weight: bold;
+    border-radius: 0.2em;
+    padding: 0.4em 0.8em;
 }
 
 input:invalid {
     color: #8d0801;
 }
 
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5em 0.5em 1.5em;
+    gap: 1em;
 
-li{
-    margin-left:  10px;
-    margin-bottom: 8px;
-    list-style: none;
-    color: #f5f3f4;
+}
+
+button{
+    min-width: 80px;
+    flex-grow: 1;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #8d0801;
+    color: white;
+    border: none;
+    border-radius: 0.2em;
+    padding:  0.5em;
+}
+
+button:hover, button:focus{
+  background-color: white;
+  color: #7a0903;
+  font-weight: bold;
+  transition: 300ms;
+}
+
+.resultado{
+    text-align: center;
+    background-color: #e93b32;
+    font-family: inherit;
     font-weight: bold;
-    background-color: #d12825;
-    border-radius: 3px;
-    border-bottom: dotted white 1px;
-    padding: 8px ;
-    height: 20px;
-    width: 220px;
-    text-align: end;
+    border-radius: 0.2em;
+    padding: 0.4em;
+
+}
+
+
+/* NOMINAS GUARDADAS */
+
+#nominas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em ;
+}
+
+h2{
+  font-size: 1.3rem;
+  padding-bottom: 0.5em;
+  border-bottom: solid white 1px;
+}
+
+.lista{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul{
-    margin: 30px auto 40px;
+    width: 80%;
+    padding: 0;
+    list-style: none;
 }
 
-#btn-nom{
-    width: 70%;
-    height: 35px;
-    margin: 20px auto 30px;
-}
-#nominas{
-    max-width: 330px;
-    height: fit-content;
-    border-radius: 8px;
-    background-color: #bf0603;
-    padding: 35px 10px;
-    box-shadow: 0 0px 10px rgb(63, 1, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: none;
-    backdrop-filter: blur(8px);   
+
+li{
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    background-color: #d12825;
+    border-radius: 0.4em;
+    border-bottom: dotted white 1px;
+    padding: 0.2em 0.8em;
+    text-align: end;
 }
 
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(8px);
-    background-color: rgba(0, 0, 0, 0.3); 
-    display: none; 
-    z-index: 10; 
+.botones-nom{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.5em 0.5em 0;
+    gap: 1em;
 }
+
+
+
+@media (min-width:710px){
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  h2{
+    padding: 0;
+  }
+
+  .container{
+    max-width: 900px;
+  }
+
+  header{
+    justify-content: start;
+  }
+
+  header img{
+     margin-left: 2em;
+  }
+
+  main{
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+  }
+
+  form{
+    flex-grow: 1;
+    padding-top: 1em;
+  }
+
+  #nominas{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    min-width: 250px;
+  }
+
+  .botones-nom{
+    margin: 0 0.5em;
+  }
+
+
+}
+
 

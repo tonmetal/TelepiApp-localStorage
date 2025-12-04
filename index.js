@@ -1,7 +1,6 @@
 const resultado = document.getElementById("resultado")
 const horasa = document.getElementById("horas")
 const pedidosa = document.getElementById("pedidos")
-const bara = document.getElementById("bar")
 const vacacionesa = document.getElementById("vacaciones")
 const guardar = document.getElementById("guardar")
 const reiniciar = document.getElementById("reiniciar")
@@ -43,10 +42,9 @@ function guardarNominas() {
 function calcular() {
     let horas = Number(horasa.value)
     let pedidos = Number(pedidosa.value)
-    let bar = Number(bara.value)
     let vacaciones = Number(vacacionesa.value)
 
-    if (horas > 200 || pedidos > 400 || bar > 100 || !Number.isInteger(bar) || !Number.isInteger(pedidos)) {
+    if (horas > 200 || pedidos > 400  || !Number.isInteger(pedidos)) {
         return
     }
 
@@ -60,9 +58,9 @@ function calcular() {
     }
 
     if (vacaciones === 0) {
-        total = ((horas * 7.67) + (pedidos * 0.48) + (bar * 0.5)).toFixed(2)
+        total = ((horas * 7.67) + (pedidos * 0.48)).toFixed(2)
     } else if (vacaciones > 0 && vacaciones <= 31) {
-        total = ((horas * 7.67) + (pedidos * 0.48) + (bar * 0.5) + (vacaciones * (media / 30))).toFixed(2)
+        total = ((horas * 7.67) + (pedidos * 0.48) + (vacaciones * (media / 30))).toFixed(2)
     }
 
     resultado.textContent = "Total: " + total + "€"
@@ -70,7 +68,6 @@ function calcular() {
 
 horasa.addEventListener("input", calcular)
 pedidosa.addEventListener("input", calcular)
-bara.addEventListener("input", calcular)
 vacacionesa.addEventListener("input", calcular)
 reseteo.addEventListener("click", resetear)
 
@@ -83,7 +80,6 @@ document.querySelectorAll("input").forEach(input => {
 function resetear() {
     horasa.value = 0
     pedidosa.value = 0
-    bara.value = 0
     vacacionesa.value = 0
     resultado.textContent = "Total: 0.00€"
 }
@@ -136,14 +132,3 @@ reiniciar.addEventListener("click", function () {
 cargarNominas()
 
 
-ver.addEventListener("click", function(){
-    nomina.style.display = "block"
-    overlay.style.display = "block"
-})
-
-
-
-overlay.addEventListener("click", function(){
-    nomina.style.display = "none"
-    overlay.style.display = "none"
-})
