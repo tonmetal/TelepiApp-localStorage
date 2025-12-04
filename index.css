@@ -144,6 +144,8 @@ button:hover, button:active{
     align-items: center;
     justify-content: space-between;
     margin-top: 2em ;
+    padding-top: 2em;
+    border-top: dotted 2px white;
 }
 
 h2{
@@ -225,6 +227,7 @@ li{
     margin-top: 2em;
     margin-bottom: 1em;
     min-width: 250px;
+    border: none;
   }
 
   .botones-nom{
