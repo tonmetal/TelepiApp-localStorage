@@ -58,9 +58,9 @@ function calcular() {
     }
 
     if (vacaciones === 0) {
-        total = ((horas * 8.27) + (pedidos * 0.36)).toFixed(2)
+        total = ((horas * 8.27) + (pedidos * 0.355)).toFixed(2)
     } else if (vacaciones > 0 && vacaciones <= 31) {
-        total = ((horas * 8.27) + (pedidos * 0.36) + (vacaciones * (media / 30))).toFixed(2)
+        total = ((horas * 8.27) + (pedidos * 0.355) + (vacaciones * (media / 30))).toFixed(2)
     }
 
     resultado.textContent = "Total: " + total + "€"
